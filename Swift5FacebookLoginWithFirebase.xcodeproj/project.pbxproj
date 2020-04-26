@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -13,9 +13,14 @@
 		5F10D2CE24554250005BA15C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5F10D2CC24554250005BA15C /* Main.storyboard */; };
 		5F10D2D024554257005BA15C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5F10D2CF24554257005BA15C /* Assets.xcassets */; };
 		5F10D2D324554257005BA15C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5F10D2D124554257005BA15C /* LaunchScreen.storyboard */; };
+		5F10D2DB2455498C005BA15C /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5F10D2DA2455498C005BA15C /* GoogleService-Info.plist */; };
+		5F10D2DD24557127005BA15C /* NextViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F10D2DC24557127005BA15C /* NextViewController.swift */; };
+		A1EC437C51DCADC01E5D3C7E /* Pods_Swift5FacebookLoginWithFirebase.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0CB4C9AEADB5D3D2A8D3C07C /* Pods_Swift5FacebookLoginWithFirebase.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		004AC431D6CE1C2A4B92BB69 /* Pods-Swift5FacebookLoginWithFirebase.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Swift5FacebookLoginWithFirebase.debug.xcconfig"; path = "Target Support Files/Pods-Swift5FacebookLoginWithFirebase/Pods-Swift5FacebookLoginWithFirebase.debug.xcconfig"; sourceTree = "<group>"; };
+		0CB4C9AEADB5D3D2A8D3C07C /* Pods_Swift5FacebookLoginWithFirebase.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Swift5FacebookLoginWithFirebase.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5F10D2C324554250005BA15C /* Swift5FacebookLoginWithFirebase.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Swift5FacebookLoginWithFirebase.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5F10D2C624554250005BA15C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5F10D2C824554250005BA15C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +29,11 @@
 		5F10D2CF24554257005BA15C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5F10D2D224554257005BA15C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5F10D2D424554257005BA15C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5F10D2DA2455498C005BA15C /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		5F10D2DC24557127005BA15C /* NextViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NextViewController.swift; sourceTree = "<group>"; };
+		5F10D2DE24557B76005BA15C /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/Main.strings; sourceTree = "<group>"; };
+		5F10D2DF24557B78005BA15C /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		6BC286552EE3F8B18AD24E59 /* Pods-Swift5FacebookLoginWithFirebase.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Swift5FacebookLoginWithFirebase.release.xcconfig"; path = "Target Support Files/Pods-Swift5FacebookLoginWithFirebase/Pods-Swift5FacebookLoginWithFirebase.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +41,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A1EC437C51DCADC01E5D3C7E /* Pods_Swift5FacebookLoginWithFirebase.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		203AFD960E77648774892550 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				004AC431D6CE1C2A4B92BB69 /* Pods-Swift5FacebookLoginWithFirebase.debug.xcconfig */,
+				6BC286552EE3F8B18AD24E59 /* Pods-Swift5FacebookLoginWithFirebase.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		5F10D2BA24554250005BA15C = {
 			isa = PBXGroup;
 			children = (
 				5F10D2C524554250005BA15C /* Swift5FacebookLoginWithFirebase */,
 				5F10D2C424554250005BA15C /* Products */,
+				203AFD960E77648774892550 /* Pods */,
+				C58731D8E57607CA68B072FA /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -59,12 +81,22 @@
 				5F10D2C624554250005BA15C /* AppDelegate.swift */,
 				5F10D2C824554250005BA15C /* SceneDelegate.swift */,
 				5F10D2CA24554250005BA15C /* ViewController.swift */,
+				5F10D2DC24557127005BA15C /* NextViewController.swift */,
 				5F10D2CC24554250005BA15C /* Main.storyboard */,
 				5F10D2CF24554257005BA15C /* Assets.xcassets */,
 				5F10D2D124554257005BA15C /* LaunchScreen.storyboard */,
 				5F10D2D424554257005BA15C /* Info.plist */,
+				5F10D2DA2455498C005BA15C /* GoogleService-Info.plist */,
 			);
 			path = Swift5FacebookLoginWithFirebase;
+			sourceTree = "<group>";
+		};
+		C58731D8E57607CA68B072FA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0CB4C9AEADB5D3D2A8D3C07C /* Pods_Swift5FacebookLoginWithFirebase.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +106,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5F10D2D724554257005BA15C /* Build configuration list for PBXNativeTarget "Swift5FacebookLoginWithFirebase" */;
 			buildPhases = (
+				792BDD521BF886D919E79901 /* [CP] Check Pods Manifest.lock */,
 				5F10D2BF24554250005BA15C /* Sources */,
 				5F10D2C024554250005BA15C /* Frameworks */,
 				5F10D2C124554250005BA15C /* Resources */,
+				1FA752E24D66A3A4265E4CAE /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -109,6 +143,7 @@
 			knownRegions = (
 				en,
 				Base,
+				ja,
 			);
 			mainGroup = 5F10D2BA24554250005BA15C;
 			productRefGroup = 5F10D2C424554250005BA15C /* Products */;
@@ -126,6 +161,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5F10D2D324554257005BA15C /* LaunchScreen.storyboard in Resources */,
+				5F10D2DB2455498C005BA15C /* GoogleService-Info.plist in Resources */,
 				5F10D2D024554257005BA15C /* Assets.xcassets in Resources */,
 				5F10D2CE24554250005BA15C /* Main.storyboard in Resources */,
 			);
@@ -133,12 +169,55 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		1FA752E24D66A3A4265E4CAE /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Swift5FacebookLoginWithFirebase/Pods-Swift5FacebookLoginWithFirebase-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Swift5FacebookLoginWithFirebase/Pods-Swift5FacebookLoginWithFirebase-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Swift5FacebookLoginWithFirebase/Pods-Swift5FacebookLoginWithFirebase-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		792BDD521BF886D919E79901 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Swift5FacebookLoginWithFirebase-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		5F10D2BF24554250005BA15C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				5F10D2CB24554250005BA15C /* ViewController.swift in Sources */,
+				5F10D2DD24557127005BA15C /* NextViewController.swift in Sources */,
 				5F10D2C724554250005BA15C /* AppDelegate.swift in Sources */,
 				5F10D2C924554250005BA15C /* SceneDelegate.swift in Sources */,
 			);
@@ -151,6 +230,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				5F10D2CD24554250005BA15C /* Base */,
+				5F10D2DE24557B76005BA15C /* ja */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -159,6 +239,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				5F10D2D224554257005BA15C /* Base */,
+				5F10D2DF24557B78005BA15C /* ja */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -170,6 +251,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -230,6 +312,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -282,9 +365,11 @@
 		};
 		5F10D2D824554257005BA15C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 004AC431D6CE1C2A4B92BB69 /* Pods-Swift5FacebookLoginWithFirebase.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 65Z4MKYS28;
 				INFOPLIST_FILE = Swift5FacebookLoginWithFirebase/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -293,15 +378,17 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.Nonoka.Swift5FacebookLoginWithFirebase;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		5F10D2D924554257005BA15C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6BC286552EE3F8B18AD24E59 /* Pods-Swift5FacebookLoginWithFirebase.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 65Z4MKYS28;
 				INFOPLIST_FILE = Swift5FacebookLoginWithFirebase/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -310,7 +397,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.Nonoka.Swift5FacebookLoginWithFirebase;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
